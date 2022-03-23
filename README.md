@@ -23,3 +23,11 @@ Expected Output: true;
 Test: "It will take a number, loop through all digits, and display to the screen if there is a zero or a one, and at which index position it was found."
 Code: boopBeep(210);
 Expected Output: 1 at index 1, 0 at index 2;
+
+Test: "It will take a number, and depending on whether it includes a digit 1, 0, or is divisible by 3, will print to the screen a different result."
+Code: boopBeep(1);
+Expected Output: "Boop!";
+
+Test: "It will take a number, and print out only one result for that specific number -- either includes a 1, includes a 0, divisible by 3, or none of the above."
+Code: boopBeep(10);
+Expected Output: "Beep!";
