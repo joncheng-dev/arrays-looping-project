@@ -19,3 +19,7 @@ Expected Output: true;
 Test: "It will take a number, determine if the number includes a '1', return true if it does, and return false if it does not."
 Code: boopBeep(11);
 Expected Output: true;
+
+Test: "It will take a number, loop through all digits, and display to the screen if there is a zero or a one, and at which index position it was found."
+Code: boopBeep(210);
+Expected Output: 1 at index 1, 0 at index 2;
