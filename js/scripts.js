@@ -1,5 +1,4 @@
 // Business Logic
-
 function boopBeep(number) {
   // The number given by the user is how high to count to.
   // Start at zero, then count up until the target number.
@@ -50,3 +49,13 @@ function boopBeep(number) {
 }
 
 // User Interface Logic
+$(document).ready(function () {
+  $("#userEnter").submit(function (event) {
+    event.preventDefault();
+    // Save user's number entered from form.
+    const userNumber = $("input#number").val();
+    console.log("User entered: " + userNumber);
+    // Pushes to page
+    $(".translated").append("Result");
+  });
+});
