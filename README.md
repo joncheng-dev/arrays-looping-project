@@ -1,3 +1,41 @@
+# _Boop Beep_
+
+#### By _**Jonathan Cheng**_
+
+#### _A web app that takes a number from a user and prints output to the HTML page._
+
+## Technologies Used
+
+- _HTML_
+- _CSS_
+- _Bootstrap_
+- _JavaScript_
+- _JQuery_
+
+## Description
+
+_This browser application that takes a user entered number and returns phrases, strings, or numbers depending on what was entered._
+
+## Setup/Installation Requirements
+
+- _Clone this repository to your desktop._
+- _Navigate to the top level of your directory._
+- _Open arrays-looping-project/boop-beep.html in your browser_
+
+## Known Bugs
+
+- _Avoid entering very large numbers. Page may become unresponsive._
+- _Negative numbers also do not work._
+- _Refresh html page after each submission / result._
+
+## License
+
+_{Let people know what to do if they run into any issues or have questions, ideas or concerns. Encourage them to contact you or make a contribution to the code.}_
+
+Copyright (c) _2022_ _Jonathan Cheng_
+
+## Testing Details
+
 Describe: boopBeep()
 
 Test: "It will take a number and console log the number."
