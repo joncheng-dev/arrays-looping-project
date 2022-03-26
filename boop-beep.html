@@ -5,26 +5,46 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css" />
     <script src="js/jquery-3.6.0.js"></script>
     <script src="js/scripts.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <title>Boop Beep</title>
   </head>
   <body>
     <div class="container">
       <h1>Boop Beep</h1>
-      <div>
-        <form id="userEnter">
-          <div class="form-group">
-            <label for="number">Enter a numberr: </label>
-            <input id="number" class="form-control" type="text" />
+      <div class="row">
+        <div class="col-md-6">
+          <div>
+            <form id="userEnter">
+              <div class="form-group">
+                <label for="number"
+                  ><span id="userPrompt"
+                    >Enter a number to translate into robot language:</span
+                  >
+                </label>
+                <input id="number" class="form-control" type="text" />
+              </div>
+              <button type="submit" class="btn">Translate</button>
+            </form>
           </div>
-          <button type="submit" class="btn">Show me the result!</button>
-        </form>
+          <div id="result">
+            <br />
+            <h2>Translated into robot language:</h2>
+            <ul>
+              <span class="translated"></span>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row">
+            <div id="robotImage">
+              <img src="img/robotic.png" alt="picture of a robot" />
+            </div>
+          </div>
+        </div>
       </div>
-      <div id="result">
-        <h1>Translated into robot language:</h1>
-        <ul>
-          <span class="translated"></span>
-        </ul>
-      </div>
+      <!-- Add a footer -->
+      <!-- Attribute the icons used -->
+      <!-- <a href="https://www.flaticon.com/free-icons/chatbot" title="chatbot icons">Chatbot icons created by surang - Flaticon</a> -->
     </div>
   </body>
 </html>

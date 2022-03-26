@@ -1,5 +1,18 @@
+// Utility
+function noInputtedWord() {
+  for (let i = 0; i < arguments.length; i++) {
+    if (arguments[i].trim().length === 0) {
+      return true;
+    }
+  }
+  return false;
+}
+
 // Business Logic
 function boopBeep(number) {
+  if (noInputtedWord(number)) {
+    return 0;
+  }
   const resultToHtml = [];
   // The number given by the user is how high to count to.
   // Start at zero, then count up until the target number.
@@ -36,16 +49,12 @@ function boopBeep(number) {
     }
     // Only one condition must be true. Here's the order of precedence.
     if (divByThree === true) {
-      console.log("I'm sorry, Dave. I'm afraid I can't do that.");
       resultToHtml.push("I'm sorry, Dave. I'm afraid I can't do that.");
     } else if (hasZero === true) {
-      console.log("Beep!");
       resultToHtml.push("Beep!");
     } else if (hasOne === true) {
-      console.log("Boop!");
       resultToHtml.push("Boop!");
     } else {
-      console.log(countingNumber);
       resultToHtml.push(countingNumber);
     }
     // Once the loop goes through, move up one count.
@@ -62,6 +71,7 @@ $(document).ready(function () {
     const userNumber = $("input#number").val();
     const printToScreen = boopBeep(userNumber);
     // Pushes to html page
+    $("#result").show();
     for (let i = 0; i < printToScreen.length; i++) {
       $(".translated").append("<li>" + printToScreen[i] + "</li>");
     }

@@ -1,3 +1,68 @@
 h1 {
+  font-size: 4em;
   text-align: center;
+  margin: 5% auto 10% auto;
+}
+
+body {
+  color: #ffefef;
+  background-color: #7c99ac;
+  font-family: "Merriweather", serif;
+}
+
+#userPrompt {
+  font-size: 1.5rem;
+}
+
+#result {
+  display: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+#robotImage {
+  margin: auto auto auto 30px;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  padding: 20px;
+}
+
+.btn {
+  background: #bb9981;
+  background-image: -webkit-linear-gradient(top, #bb9981, #bb9981);
+  background-image: -moz-linear-gradient(top, #bb9981, #bb9981);
+  background-image: -ms-linear-gradient(top, #bb9981, #bb9981);
+  background-image: -o-linear-gradient(top, #bb9981, #bb9981);
+  background-image: linear-gradient(to bottom, #bb9981, #bb9981);
+  -webkit-border-radius: 14;
+  -moz-border-radius: 14;
+  border-radius: 14px;
+  font-family: "Merriweather", serif;
+  color: #d3dedc;
+  font-size: 25px;
+  margin: 10px auto;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #d3dedc;
+  background-image: -webkit-linear-gradient(top, #d3dedc, #d3dedc);
+  background-image: -moz-linear-gradient(top, #d3dedc, #d3dedc);
+  background-image: -ms-linear-gradient(top, #d3dedc, #d3dedc);
+  background-image: -o-linear-gradient(top, #d3dedc, #d3dedc);
+  background-image: linear-gradient(to bottom, #d3dedc, #d3dedc);
+  color: #7c99ac;
+  text-decoration: none;
+}
+
+li {
+  color: #d3dedc;
+  font-size: 1.5rem;
+  line-height: 2;
 }
