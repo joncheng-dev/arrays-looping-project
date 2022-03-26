@@ -10,41 +10,49 @@
   </head>
   <body>
     <div class="container">
-      <h1>Boop Beep</h1>
-      <div class="row">
-        <div class="col-md-6">
-          <div>
-            <form id="userEnter">
-              <div class="form-group">
-                <label for="number"
-                  ><span id="userPrompt"
-                    >Enter a number to translate into robot language:</span
-                  >
-                </label>
-                <input id="number" class="form-control" type="text" />
+      <div class="card-header">
+        <h1>Boop Beep</h1>
+      </div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-md-6">
+            <div>
+              <form id="userEnter">
+                <div class="form-group">
+                  <label for="number"
+                    ><span id="userPrompt"
+                      >Enter a number to translate into robot language:</span
+                    >
+                  </label>
+                  <input id="number" class="form-control" type="text" />
+                </div>
+                <button type="submit" class="btn">Translate</button>
+              </form>
+            </div>
+            <div id="result">
+              <br />
+              <h2>Translated into robot language:</h2>
+              <ul>
+                <span class="translated"></span>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="row">
+              <div id="robotImage">
+                <img src="img/robotic.png" alt="picture of a robot" />
               </div>
-              <button type="submit" class="btn">Translate</button>
-            </form>
-          </div>
-          <div id="result">
-            <br />
-            <h2>Translated into robot language:</h2>
-            <ul>
-              <span class="translated"></span>
-            </ul>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="row">
-            <div id="robotImage">
-              <img src="img/robotic.png" alt="picture of a robot" />
             </div>
           </div>
         </div>
       </div>
-      <!-- Add a footer -->
-      <!-- Attribute the icons used -->
-      <!-- <a href="https://www.flaticon.com/free-icons/chatbot" title="chatbot icons">Chatbot icons created by surang - Flaticon</a> -->
+    </div>
+    <div class="card-footer">
+      <a
+        href="https://www.flaticon.com/free-icons/chatbot"
+        title="chatbot icons"
+        >Chatbot icons created by surang - Flaticon</a
+      >
     </div>
   </body>
 </html>

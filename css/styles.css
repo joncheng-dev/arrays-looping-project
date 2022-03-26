@@ -1,4 +1,7 @@
 h1 {
+  border-style: dashed;
+  color: #424242;
+  background-color: #d3dedc;
   font-size: 4em;
   text-align: center;
   margin: 5% auto 10% auto;
@@ -10,18 +13,24 @@ body {
   font-family: "Merriweather", serif;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+li {
+  color: #d3dedc;
+  font-size: 1.5rem;
+  line-height: 2;
+}
+
 #userPrompt {
   font-size: 1.5rem;
 }
 
 #result {
   display: none;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
 }
 
 #robotImage {
@@ -59,10 +68,4 @@ img {
   background-image: linear-gradient(to bottom, #d3dedc, #d3dedc);
   color: #7c99ac;
   text-decoration: none;
-}
-
-li {
-  color: #d3dedc;
-  font-size: 1.5rem;
-  line-height: 2;
 }
